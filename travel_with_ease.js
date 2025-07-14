@@ -135,10 +135,12 @@ function getLocalTime(timezone) {
     });
 }
 
-searchForm.addEventListener("submit", performSearch);
-searchField.addEventListener("input", performSearch);
-clearBtn.addEventListener("click", () => {
-  searchField.value = "";
-  resultsContainer.innerHTML = "";
-  resultsSection.style.display = "none";
-});
+if (searchForm) {
+  searchForm.addEventListener("submit", performSearch);
+  searchField.addEventListener("input", performSearch);
+  clearBtn.addEventListener("click", () => {
+    searchField.value = "";
+    resultsContainer.innerHTML = "";
+    resultsSection.style.display = "none";
+  });
+}
