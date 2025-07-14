@@ -136,9 +136,6 @@ function getLocalTime(timezone) {
     });
 }
 
-submitMessageBtn.addEventListener("click", () => {
-  alert("Thank you for your message!");
-});
 searchForm.addEventListener("submit", performSearch);
 searchField.addEventListener("input", performSearch);
 clearBtn.addEventListener("click", () => {
