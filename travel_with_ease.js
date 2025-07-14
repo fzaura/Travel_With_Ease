@@ -12,7 +12,6 @@ const searchField = document.getElementById("search-input");
 const resultsContainer = document.getElementById("results-container");
 const resultsSection = document.getElementById("results-section");
 const clearBtn = document.getElementById("clear-btn");
-const submitMessageBtn = document.getElementById("submitMessageBtn");
 
 function renderResults(results) {
   resultsContainer.innerHTML = "";
