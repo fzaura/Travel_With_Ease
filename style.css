@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    background-image: url('https://cdn.mos.cms.futurecdn.net/GjzLDNKmo9ogoURBDeSfeQ.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.logo { display: flex; align-items: center; }
+.logo img { height: 40px; margin-right: 10px; }
+.logo span { font-size: 1.5rem; font-weight: bold; }
+.nav-links { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
+.nav-links a { color: #fff; text-decoration: none; font-size: 1rem; }
+
+#search-form {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 50px;
+    padding: 5px 8px;
+    width: 100%;
+    max-width: 500px;
+}
+#search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+    padding-left: 35px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+#search-form button {
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#search-form button[type="submit"] { background-color: #04AA6D; }
+#search-form button[type="submit"]:hover { background-color: #058f5c; }
+#clear-btn { background-color: #d9534f; }
+#clear-btn:hover { background-color: #c9302c; }
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+    text-align: left;
+}
+.hero-content { max-width: 600px; }
+.hero-content h1 { font-size: 4rem; margin: 0; }
+.hero-content p { font-size: 1.2rem; margin: 1rem 0; }
+.book-now-btn {
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.social-icons { display: flex; flex-direction: column; gap: 1rem; }
+.social-icons img { width: 24px; height: 24px; }
+
+
+#results-section {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 2rem; 
+    width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+#results-container {
+    background-color: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    padding: 1rem;
+}
+.result-card {
+    background-color: rgba(45, 45, 45, 0.7);
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.result-card #local-time {
+    background-color: #000;
+    color: #0f0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.result-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+.result-card h3 { margin: 1rem 0 0.5rem 0; }
+.result-card p { font-size: 0.9rem; flex-grow: 1; }
+.result-card button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.about-page, .contact-page { padding: 2rem; max-width: 900px; margin: 0 auto; text-align: center; }
+.about-header, .team-section, .history-section, .location-section { margin-bottom: 3rem; background-color: rgba(0,0,0,0.6); padding: 1.5rem; border-radius: 8px; }
+.team-members { display: flex; justify-content: space-around; gap: 1rem; flex-wrap: wrap; }
+.team-member { padding: 1rem; border-radius: 8px; width: 200px; }
+.team-member img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
+.team-member h3, .team-member p, .team-member span { margin: 0.5rem 0; }
+.team-member span { font-weight: bold; }
+.location-images { display: flex; gap: 1rem; justify-content: center; }
+.location-images img { max-width: 48%; border-radius: 8px; }
+
+.contact-form-section { background-color: rgba(0, 0, 0, 0.7); padding: 2rem; border-radius: 8px; }
+.form-group { margin-bottom: 1rem; text-align: left; }
+.form-group label { display: block; margin-bottom: 0.5rem; }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact-form-section button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#form-status { margin-top: 1rem; font-weight: bold; }

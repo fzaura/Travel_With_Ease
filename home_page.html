@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://www.freepnglogos.com/uploads/world-map-png/world-map-gstc-country-representatives-global-sustainable-tourism-26.png" alt="TravelBloom Logo">
+                <span>TravelBloom</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+                <button type="submit">Search</button>
+                <button type="button" id="clear-btn">Clear</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>EXPLORE YOUR DREAM DESTINATION</h1>
+                <p>Encouraging exploration of unfamiliar territories and embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                <button class="book-now-btn">BOOK NOW</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" alt="Twitter"></a>
+                <a href="#"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt="Facebook"></a>
+                <a href="#"><img src="https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-icon-file-instagram-svg-wikimedia-commons-5.png" alt="Instagram"></a>
+                <a href="#"><img src="https://www.freepnglogos.com/uploads/youtube-play-button-png/youtube-play-button-file-youtube-play-buttom-icon-svg-wikimedia-commons-8.png" alt="YouTube"></a>
+            </div>
+        </section>
+
+        <section id="results-section">
+            <div id="results-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="travel_with_ease.js"></script>
+</body>
+</html>
